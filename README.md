@@ -10,15 +10,7 @@ Before using this script, ensure you have the following:
 - Administrator or elevated privileges
 
 ## Usage
-### With File Explorer
-1. Download the script to your computer.
-```batch
-git clone https://github.com/d1yorhay/windows-wifi-key-thief
-```
-2. Open the script folder File Explorer.
-3. Run the script `script.bat`
 
-### With only CMD
 1. Download the script to your computer.
 ```batch
 git clone https://github.com/d1yorhay/windows-wifi-key-thief
@@ -31,6 +23,8 @@ cd windows-wifi-key-thief
 ```batch
 script.bat
 ```
+
+> You can also run the script from Explorer
 ## How It Works
 
 The script performs the following steps:
@@ -40,7 +34,7 @@ The script performs the following steps:
 3. It processes the `temp` file, extracting Wi-Fi network names and obtaining their access keys.
 4. The extracted data is appended to the `wifi_keys.txt` file, and a signature is added to indicate the script's authorship.
 
-Please exercise caution and ensure you have the necessary permissions to run this script, as it may involve accessing sensitive information.
+> Please exercise caution and ensure you have the necessary permissions to run this script, as it may involve accessing sensitive information.
 
 ## Disclaimer
 
