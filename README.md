@@ -1,51 +1,50 @@
-# Windows Wi-Fi Key Thief
-This Windows batch script is designed to extract and save access keys for Wi-Fi networks saved on your system. It scans and records data related to wireless network access in a file named `wifi_keys.txt`. Please note that using this script may require permissions and compliance with data protection and privacy laws.
+<h1 align="center">WiFi Password Reciever</h1>
 
-**Author:** [d1yorhay](https://github.com/d1yorhay)
+<p align="center">Этот пакетный скрипт для Windows предназначен для извлечения и сохранения ключей доступа к сетям Wi-Fi, сохраненных в вашей системе. Он сканирует и записывает данные, относящиеся к доступу к беспроводной сети, в файл с именем wifi_keys.txt.</p>
 
-## Prerequisites
-Before using this script, ensure you have the following:
+## Установка
 
-- Windows operating system
-- Administrator or elevated privileges
-
-## Usage
-
-1. Download the script to your computer.
-```batch
-git clone https://github.com/d1yorhay/windows-wifi-key-thief
+Через git:
 ```
-2. Open the script folder.
-```batch
-cd windows-wifi-key-thief
-```
-3. Run the script.
-```batch
-script.bat
+git clone https://github.com/dyrhyrv/wfpe/
 ```
 
-> You can also run the script from Explorer
-## How It Works
+- или
 
-The script performs the following steps:
+Воспользуйтесь [ссылкой для загрузки](https://github.com/dyrhyrv/wfpe/archive/refs/tags/prealpha.zip).
 
-1. It sets the local environment variable to enable delayed expansion and changes the code page to 65001 to support UTF-8 characters.
-2. It uses the `netsh wlan show profiles` command to list the Wi-Fi network profiles and saves the output to a temporary file named `temp`.
-3. It processes the `temp` file, extracting Wi-Fi network names and obtaining their access keys.
-4. The extracted data is appended to the `wifi_keys.txt` file, and a signature is added to indicate the script's authorship.
+## Использование
 
-> Please exercise caution and ensure you have the necessary permissions to run this script, as it may involve accessing sensitive information.
+1. Запустите ```cmd``` от имени администратора.
+2. Перейдите в директорию с загруженным файлом.
+3. Запустите скрипт введя название скрипта.
+4. Проверьте файл ```wifi_keys.txt``` 
 
-## Disclaimer
+- или
 
-This script is provided for educational and informational purposes only. Any use of this script to access Wi-Fi networks without authorization may be illegal and unethical. Always respect privacy and adhere to the laws and regulations in your jurisdiction.
+1. Откройте проводник.
+2. Перейдите в директорию с загруженным файлом.
+3. Запустите скрипт от имени администратора.
+4. Проверьте файл ```wifi_keys.txt```
 
-**Use this script responsibly and only on networks for which you have explicit permission to access. The author and contributors are not responsible for any misuse or illegal activities involving this script.**
+## Как это работает
 
-## License
+1. Он устанавливает локальную переменную среды для включения отложенного расширения и изменяет кодовую страницу на 65001 для поддержки символов UTF-8.
+2. Программа использует команду "netsh wlan show profiles" для отображения списка профилей сетей Wi-Fi и сохраняет выходные данные во временном файле с именем "temp".
+3. Программа обрабатывает файл "temp", извлекая имена сетей Wi-Fi и получая ключи доступа к ним.
+4. Извлеченные данные добавляются в файл "wifi_keys.txt` и добавляется подпись, указывающая на авторство скрипта.
 
-This script is distributed under the [MIT License](LICENSE).
+> Пожалуйста, будьте осторожны и убедитесь, что у вас есть необходимые разрешения для запуска этого скрипта, поскольку это может привести к доступу к конфиденциальной информации.
 
-For questions, suggestions, or issues, please [open an issue](https://github.com/d1yorhay/windows-wifi-key-thief/issues) on the GitHub repository.
+## Авторы
+- [dyrhyrv](https://github.com/dyrhyrv)
 
-Enjoy responsibly!
+## Лицензия
+
+[MIT](https://github.com/dyrhyrv/wfpe/blob/main/LICENSE)
+
+## Отказ от ответственности
+
+Этот скрипт предоставляется исключительно в образовательных и информационных целях. Любое использование этого скрипта для доступа к сетям Wi-Fi без авторизации может быть незаконным и неэтичным. Всегда уважайте конфиденциальность и соблюдайте законы и нормативные акты вашей юрисдикции.
+
+**Используйте этот скрипт ответственно и только в сетях, на доступ к которым у вас есть явное разрешение. Автор и соавторы не несут ответственности за любое неправильное использование или незаконные действия, связанные с использованием этого скрипта.**
